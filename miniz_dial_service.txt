@@ -1,0 +1,17 @@
+# copy to /etc/systemd/system/zdial.service with sudo
+# chmod 644 /etc/systemd/system/zdial.service with sudo
+# sudo systemctl enable zdial
+
+[Unit]
+Description=Zenith Dial
+DefaultDependencies=no  #overrides default late start in boot process
+After=local-fs.target
+
+[Service]
+ExecStart=/home/pi/miniz/miniz.py
+
+[Install]
+WantedBy=sysinit.target
+
+
+
