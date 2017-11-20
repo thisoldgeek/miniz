@@ -14,7 +14,8 @@ mv squeezelite squeezelite-armv6hf
 sudo mv squeezelite-armv6hf /usr/bin
 sudo chmod a+x /usr/bin/squeezelite-armv6hf
 
-cd /home/pi/squeezelite
+# cd to /home/pi/squeezelite not necessary - squeezelite under miniz/scripts
+#cd /home/pi/squeezelite 
 sudo wget http://www.gerrelt.nl/RaspberryPi/squeezelite_settings.sh
 sudo mv squeezelite_settings.sh /usr/local/bin
 sudo chmod a+x /usr/local/bin/squeezelite_settings.sh
