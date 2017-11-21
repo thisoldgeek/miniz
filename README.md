@@ -55,6 +55,17 @@ hackster.io miniz
 Change IP Address to the IP of your miniz
 Change player_id to your player from LMS/Settings/Information MAC Address
 
+If you'd like to add additional "radio stations"
+
+Consult the miniz/docs file name miniz_Frequency_to_Degrees.pdf and change the /miniz/miniz.py program
+
+*format below is degrees:fav_number
+
+favs = {82:0,57:1,30:2,8:3,352:4,333:5}
+
+
+
+and modify
 ## *Testing:*
 Intentionally blank
 
