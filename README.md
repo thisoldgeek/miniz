@@ -52,6 +52,9 @@ hackster.io miniz
 ## *Configuration:*
 * Install python programs and run scripts. See tutorial at hackster.io/thisoldgeek
 
+Change IP Address to the IP of your miniz
+Change player_id to your player from LMS/Settings/Information MAC Address
+
 ## *Testing:*
 Intentionally blank
 
