@@ -10,29 +10,18 @@ from pylms.server import Server
 from pylms.player import Player
 import textwrap
 
-#sc = Server(hostname="192.168.0.107", port=9090, username="user", password="password")
-sc = Server(hostname="192.168.0.245", port=9090)
-scNP = Server(hostname="192.168.0.245", port=9090)
+#sc = Server(hostname="192.168.0.211", port=9090, username="user", password="password")
+hostIP = "192.168.0.211"	# Change to the IP Address of your Logitech Media Server (LMS)
+sc = Server(hostname=hostIP, port=9090)	# used for volume and play/pause
+scNP = Server(hostname=hostIP, port=9090)	# used only to get Now Playing cover.jpg
+
 sleep(60)     # allow time for LMS to start, otherwise get ConnectionError 111
 sc.connect()
 scNP.connect()
 # insert MAC address here from LMS/Settings/Information
-player_id ="b8:27:eb:93:bb:81"    # minizStretch Player
+player_id ="b8:27:eb:93:bb:81"    # miniz Player
 sq = sc.get_player(player_id)
 sqNP = scNP.get_player(player_id)  # UGLY KLUDGE! Avoids conflict with volume routine which caused bad refresh on album cover.jpg
-
-
-# Get Album Art for Now Playing; will overwrite cover.jpg file each time
-#os.system("wget -O textures/cover.jpg http://192.168.0.245:9000/music/current/cover.jpg?player=b8:27:eb:77:6d:00")
-
-#print (sq.get_name(), sq.get_mode(), sq.get_time_elapsed(), sq.is_connected, sq.get_wifi_signal_strength() )
-#print (sq.get_track_title())
-
-# Works as of 10-18-2017 07:30PM
-# rot = 175M equals about "9 o'clock" on the dial/80 degrees
-# rot = 300M equals about "12 o'clock" on the dial/10 degrees
-# rot = 350M  equals about "1 o'clock" on the dial/350 degrees
-# Thus you could have many radio stations/presets at least 5 degree intervals around the dial
 
 DISPLAY = pi3d.Display.create(use_pygame=True, samples=4)
 DISPLAY.set_background(0,0,0,1) #r,g,b and alpha
@@ -49,11 +38,6 @@ radio_dial = pi3d.ImageSprite("/home/pi/miniz/textures/dial.png",  shader,  w=32
 clock_face = pi3d.ImageSprite("/home/pi/miniz/textures/clock_face.png",  shader,  w=320.0,  h=320.0,  x=0.0, y=-30.0, z=6.0)
 clock_hour = pi3d.ImageSprite("/home/pi/miniz/textures/clock_hour_hand.png", shader,  w=32.0,  h=176.0,  x=0.0, y=-30.0, z=4.0)
 clock_min  = pi3d.ImageSprite("/home/pi/miniz/textures/clock_minute_hand.png", shader,  w=16.0,  h=156.0,  x=0.0, y=-30.0, z=4.0)
-
-# Album Art Sprites
-#im = Image.open("/home/pi/miniz/textures/cover.jpg")
-#tex = pi3d.Texture(im) # can pass PIL.Image rather than path as string
-#cover_art = pi3d.ImageSprite(tex, shader, w=320, h=320, x=0.0, y=-30.0, z=6.0)
 
 global myFont
 # colors
@@ -87,7 +71,7 @@ start_time = time.time()
 curr_album  = None
 prev_album = curr_album
 # format below is degrees:fav_number
-# see separate guide to LMS for setting up favorites
+# see separate guide to LMS for setting up favorites in https://github.com/thisoldgeek/miniz
 favs = {82:0,57:1,30:2,8:3,352:4,333:5}
 
 # This is the event callback routine to handle tune knob events
