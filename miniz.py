@@ -17,10 +17,9 @@ sleep(60)     # allow time for LMS to start, otherwise get ConnectionError 111
 sc.connect()
 scNP.connect()
 # insert MAC address here from LMS/Settings/Information
-player_id ="b8:27:eb:77:6d:00"    # minizStretch Player
+player_id ="b8:27:eb:93:bb:81"    # minizStretch Player
 sq = sc.get_player(player_id)
 sqNP = scNP.get_player(player_id)  # UGLY KLUDGE! Avoids conflict with volume routine which caused bad refresh on album cover.jpg
-
 
 
 # Get Album Art for Now Playing; will overwrite cover.jpg file each time
