@@ -7,13 +7,21 @@ My grateful appreciation is extended to the following, without whom this project
 and to various Makers and members of the Open Source community for their continued sharing and support.
 
 Tinkernut, https://www.hackster.io/tinkernut/diy-vintage-spotify-radio-using-a-raspberry-pi-bc3322
+
 gerrelt, http://www.gerrelt.nl/RaspberryPi/wordpress/tutorial-stand-alone-squeezebox-server-and-player-for-bbq/
+
 Oliver Derks, pi3d clock, https://groups.google.com/forum/#!topic/pi3d/qls3MQbtLiA
+
 Bob Rathbone, rotary encoders, http://www.bobrathbone.com/raspberrypi/Raspberry%20Rotary%20Encoders.pdf
+
 jinglemansweep on github, pyLMS, https://github.com/jinglemansweep/PyLMS
+
 pi3d written by Tim Skillman, Paddy Gaunt, Tom Ritchford Copyright © 2012 - 2017, https://github.com/tipam/pi3d
+
 Adafruit, various but especially, https://learn.adafruit.com/running-opengl-based-games-and-emulators-on-adafruit-pitft-displays/pitft-setup
+
 trendblog: Mark Knoll, running headless pi, http://trendblog.net/raspberry-pi-basic-headless-setup-without-cables/
+
 
 ## *Description:*
 A mono radio that plays favorite Pandora channels, internet radio stations, podcasts, playlists and 
@@ -23,6 +31,8 @@ In the as-built version of this project, I'm using the free downloadable Deco ty
 
 See the posting at (future):
 http://thisoldgeek.blogspot.com
+
+hackster.io miniz
 
 
 ## *Required Hardware:*
