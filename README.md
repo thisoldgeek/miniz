@@ -48,6 +48,7 @@ hackster.io miniz
 
 ## *Fabrication:*
 * 3D printed case required; other 3d parts optional
+* See docs folder for 3D print settings
 
 ## *Configuration:*
 * Install python programs and run scripts. See tutorial at hackster.io/thisoldgeek
