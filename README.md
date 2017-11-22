@@ -47,6 +47,7 @@ hackster.io miniz
 * Miscellaneous screws, nuts, standoffs, 22AWG wire
 
 ## *Fabrication:*
+* 3D print files in STL_files folder
 * 3D printed case required; other 3d parts optional
 * See docs folder for 3D print settings
 
