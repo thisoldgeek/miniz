@@ -57,7 +57,7 @@ Change player_id to your player from LMS/Settings/Information MAC Address
 
 If you'd like to add additional "radio stations"
 
-Consult the miniz/docs file name miniz_Frequency_to_Degrees.pdf and change the /miniz/miniz.py program
+Consult the miniz/docs file name miniZ_dial_frequency_map.png and change the /miniz/miniz.py program
 
 *format below is degrees:fav_number
 
