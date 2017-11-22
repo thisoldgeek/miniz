@@ -63,9 +63,6 @@ Consult the miniz/docs file name miniZ_dial_frequency_map.png and change the /mi
 
 favs = {82:0,57:1,30:2,8:3,352:4,333:5}
 
-
-
-and modify
 ## *Testing:*
 Intentionally blank
 
