@@ -66,7 +66,8 @@ Consult the miniz/docs file name miniZ_dial_frequency_map.png and change the /mi
 favs = {82:0,57:1,30:2,8:3,352:4,333:5}
 
 ## *Testing:*
-Intentionally blank
+Use miniz/test_rotary_switches.py to test the tune and volume rotary encoder wiring and functions
+Pin numbers in test_rotary_switches.py are the same as in miniz.py
 
 ## *REQUIRED:*
 Intentionally blank
