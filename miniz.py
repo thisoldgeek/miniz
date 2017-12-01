@@ -10,16 +10,19 @@ from pylms.server import Server
 from pylms.player import Player
 import textwrap
 
-#sc = Server(hostname="192.168.0.211", port=9090, username="user", password="password")
+########################################################
+# Change the hostIP and player_id for your installation#
+########################################################
 hostIP = "192.168.0.211"	# Change to the IP Address of your Logitech Media Server (LMS)
+player_id ="b8:27:eb:93:bb:81"  # insert MAC address here from LMS/Settings/Information
+
+#sc = Server(hostname="192.168.0.211", port=9090, username="user", password="password")
 sc = Server(hostname=hostIP, port=9090)	# used for volume and play/pause
 scNP = Server(hostname=hostIP, port=9090)	# used only to get Now Playing cover.jpg
 
 sleep(60)     # allow time for LMS to start, otherwise get ConnectionError 111
 sc.connect()
 scNP.connect()
-# insert MAC address here from LMS/Settings/Information
-player_id ="b8:27:eb:93:bb:81"    # miniz Player
 sq = sc.get_player(player_id)
 sqNP = scNP.get_player(player_id)  # UGLY KLUDGE! Avoids conflict with volume routine which caused bad refresh on album cover.jpg
 
