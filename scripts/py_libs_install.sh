@@ -1,8 +1,8 @@
 #!/bin/sh
 # run installs with sudo!
-apt-get update  
-apt-get upgrade 
-cp .distutils.cfg ~/.distutils.cfg
+sudo apt-get update  
+sudo apt-get upgrade 
+cp .distutils.cfg /home/pi/.distutils.cfg
 sudo apt-get install python3-pip
 sudo pip3 install pi3d           
 sudo apt-get install python3-pil
