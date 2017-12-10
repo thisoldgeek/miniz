@@ -24,9 +24,9 @@ TUNE_BUTTON = 6	# Pin x  Switch
 # Define GPIO inputs for Volume 
 VOLUME_A = 27
 VOLUME_B = 23
-# VOLUME Button is used on Pimoroni On Off SHIM 
+# VOLUME Button is used in pishutdown routine when installed
 # Defined here to complete callback; not used in routine
-VOLUME_BUTTON = 4
+VOLUME_BUTTON = 3
 
 
 # This is the event callback routine to handle left knob events
