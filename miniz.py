@@ -228,6 +228,13 @@ def draw_sprites(mode):
 				track.draw()
 		elif curr_album ==  prev_album:
 			cover_art.draw()
+			curr_artist = sqNP.get_track_artist()
+			curr_track = sqNP.get_track_title()
+			artist = pi3d.String(camera=CAMERA, is_3d=False, font=myFont, string=curr_artist,  x=0, y=-30, z=1.0)
+			artist.set_shader(shader)
+			artist.draw()
+			track = pi3d.String(camera=CAMERA, is_3d=False, font=myFont, string=curr_track,  x=0, y=-80, z=1.0)
+			track.set_shader(shader)
 			track.draw()
 
 	return
