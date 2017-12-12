@@ -1,6 +1,6 @@
 # **miniz internet radio**
+![miniz radio](https://raw.github.com/thisoldgeek/miniz/master/miniz_hackster_intro_photo.jpg "miniz Streaming Radio")
 
-# *Picture goes here - future*
 
 # *Acknowledgements:*
 My grateful appreciation is extended to the following, without whom this project would never exist, 
