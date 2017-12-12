@@ -1,5 +1,5 @@
 # **miniz internet radio**
-![miniz radio](https://raw.github.com/thisoldgeek/miniz/master/miniz_hackster_intro_photo.jpg "miniz Streaming Radio")
+![miniz radio](https://github.com/thisoldgeek/miniz/blob/master/miniz_hackster_intro_photo.JPG "miniz Streaming Radio")
  
 
 # *Acknowledgements:*
