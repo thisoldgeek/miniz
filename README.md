@@ -73,7 +73,6 @@ Pin numbers in test_rotary_switches.py are the same as in miniz.py
 Intentionally blank
 
 ## *More Information:*
-See the build log at hackster.io/thisoldgeek
-
+See the build log at https://www.hackster.io/thisoldgeek/miniz-tiny-streaming-radio-based-on-classic-zenith-cube-cbbc3e
 ## *Update 11-19-2017:*
 Initial install.
