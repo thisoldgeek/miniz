@@ -76,3 +76,12 @@ Intentionally blank
 See the build log at https://www.hackster.io/thisoldgeek/miniz-tiny-streaming-radio-based-on-classic-zenith-cube-cbbc3e
 ## *Update 11-19-2017:*
 Initial install.
+
+## *UPDATE 2018-07-29: *
+Added script miniz_dial_positions.py. Use this program to map a radio frequency on the dial to degrees of a circle
+Degrees of a circle are used to play Favorites. 
+*Usage*
+Stop the zdial service.
+Run the program, tune to a desired radio frequency on the dial. The degrees of circle for that frequency appears below
+the center of the dial in white letters. Associate that degree with the favorite you wish to play at that frequency 
+in the "favs:" dictionary of the miniz.py script
