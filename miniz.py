@@ -75,9 +75,11 @@ radio_needle_rot = degrees
 start_time = time.time()
 curr_album  = None
 prev_album = curr_album
+
 # format below is degrees:fav_number
-# see separate guide to LMS for setting up favorites in https://github.com/thisoldgeek/miniz
 favs = {82:0,57:1,30:2,8:3,352:4,333:5}
+# in order, this maps degrees to:  175, 200, 250, 300, 350 and 400 meters
+# on the visible radio dial
 
 # This is the event callback routine to handle tune knob events
 def tune_knob_event(event):
